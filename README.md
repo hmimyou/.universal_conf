@@ -4,7 +4,7 @@ Setup:
 
 1. git clone this dir to your home dir(~).
 
-2. In your ~/.bash_profile file, add the following line at the bottom:
+2. In your ~/.bash_profile file, add the following line at the top:
 
 		[ -f ~/.universal_conf/.univ_bash_profile ] && source ~/.universal_conf/.univ_bash_profile
 
