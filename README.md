@@ -11,4 +11,5 @@ Setup:
 3. In your ~/.gitconfig file, add the following lines at the bottom:
 
 	[include]
+
 		path = ~/.universal_conf/.univ_gitconfig
