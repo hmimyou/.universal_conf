@@ -37,5 +37,6 @@ alias pingme="ping $(hostname)"
 alias ht="history | tail"
 alias hg="history | grep"
 alias fcl="fc -l"
+alias fcs="fc -s"
 
 set -o vi
