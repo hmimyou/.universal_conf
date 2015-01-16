@@ -13,5 +13,8 @@
 	br = branch -al
 	ss = status -s
 	sl = status
-	ca = commit -am
+	ca = commit -am      # git ca "msg"
 	co = checkout
+	stm = stash save     # stash with msg, will generate stash number X, git stm "msg"
+	stl = stash list     # list stashes with stash number X 
+	sta = stash apply    # recover stash, if with number, sta stash@{X}
