@@ -1,4 +1,4 @@
-[ -f ~/.bashrc ] && source ~/.bashrc
+# universal bash profile setting
 
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
