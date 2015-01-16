@@ -12,3 +12,9 @@ Setup:
 
 		[include]
 			path = ~/.universal_conf/.univ_gitconfig
+
+4. If you use vim, in your ~/.vimrc file, add the following:
+		
+		if filereadable(glob("~/.universal_conf/.univ_vimrc"))
+			source ~/.universal_conf/.univ_vimrc
+		endif
