@@ -1,3 +1,6 @@
+[core]
+	excludesfile = ~/.universal_conf/.univ_gitignore
+
 [color]
 	diff = auto
 	status = auto
