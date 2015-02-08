@@ -11,8 +11,8 @@ set foldcolumn=2
 hi foldcolumn ctermbg=255 ctermfg=255
 
 " control
-set tabstop=4			" tab step for display
-set softtabstop=4		" tab step for input
+set tabstop=2			" tab step for display
+set softtabstop=2		" tab step for input
 syntax enable           " enable syntax processing
 
 " search 
