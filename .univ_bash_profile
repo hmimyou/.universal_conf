@@ -3,6 +3,20 @@
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
+function isLinux() {
+	if [ $(uname -s) = "Linux" ]; then
+		return 0;
+	fi
+	return 1;
+}
+
+function isOSX() {
+	if [ $(uname -s) = "Darwin" ]; then
+		return 0;
+	fi
+	return 1;
+}
+
 function parse_git_branch() {
 	git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
@@ -23,12 +37,12 @@ export PS1="\[$t_green\]\u@\h:\[$t_yellow\]\W\\[$t_cyan\]\$(parse_git_branch)\[$
 
 export EDITOR=/usr/bin/vim
 
-if [ $(uname -s) = "Linux" ]; then
+if isLinux; then
 	alias ls='ls --color=auto'
-fi
-
-if [ $(uname -s) = "Darwin" ]; then
+elif isOSX; then
 	alias ls='ls -G'
+else
+	echo "Error: no Linux or OSX system detected" 1>&2;
 fi
 
 alias ll="ls -lhF"
