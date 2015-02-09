@@ -17,6 +17,7 @@ function isOSX() {
 	return 1;
 }
 
+# do not unset this function, since PS1 requires it to parse git branch
 function parse_git_branch() {
 	git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
@@ -54,3 +55,5 @@ alias fcl="fc -l"
 alias fcs="fc -s"
 
 set -o vi
+unset -f isLinux			# remove isLinux function
+unset -f isOSX				# remove isOSX function
