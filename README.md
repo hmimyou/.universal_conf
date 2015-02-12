@@ -8,7 +8,7 @@ Setup:
 
 		[ -f ~/.universal_conf/.univ_bash_profile ] && source ~/.universal_conf/.univ_bash_profile
 
-3. In your ~/.gitconfig file, add the following lines at the bottom:
+3. In your ~/.gitconfig file, add the following lines at the bottom (only supported by git 1.7.10+):
 
 		[include]
 			path = ~/.universal_conf/.univ_gitconfig
