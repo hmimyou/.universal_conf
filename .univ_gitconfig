@@ -24,3 +24,5 @@
 	sts = stash save     # stash with msg, will generate stash number X, git sts "msg"
 	stl = stash list     # list stashes with stash number X 
 	sta = stash apply    # recover stash, if with number, sta stash@{X}
+	dno = diff --name-only
+	dnol = diff --name-only HEAD~1..HEAD
