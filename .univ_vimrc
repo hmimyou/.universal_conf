@@ -7,8 +7,6 @@ set nocompatible
 set nonumber
 set cursorline			" highlight current line
 set showmatch			" highlight matching [{()}]
-set foldcolumn=2
-hi foldcolumn ctermbg=255 ctermfg=255
 
 " control
 set tabstop=2			" tab step for display
