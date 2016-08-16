@@ -54,9 +54,6 @@ alias hg="history | grep"
 alias fcl="fc -l"
 alias fcs="fc -s"
 
-function cdgo() {
-	cd $GOPATH/src/code.uber.internal/$1
-}
 
 set -o vi
 unset -f isLinux			# remove isLinux function
