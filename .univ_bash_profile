@@ -53,6 +53,7 @@ alias ht="history | tail"
 alias hg="history | grep"
 alias fcl="fc -l"
 alias fcs="fc -s"
+alias gc="grep --color -n"
 
 
 set -o vi
